@@ -20,3 +20,11 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# # Create a superuser manually!
+# from django.contrib.auth.models import User
+# user = User.objects.get(username=<superuser's username>) #or email=<email>
+# user.first_name = 'first_name'
+# user.last_name = 'last_name'
+# user.username = 'Ridoy' #make sure it is unique
+# user.save()
