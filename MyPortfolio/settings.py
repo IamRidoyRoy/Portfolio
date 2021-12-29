@@ -19,7 +19,8 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -69,6 +70,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'MyPortfolio.wsgi.application'
+
+
+# SECURITY WARNING: keep the secret key used in production secret!
+
+SECRET_KEY = '9@*px_!v@z#i49%91y4dzl_95qkpxp#ujgxi_un3_6l#m2r3o2'
+# SECRET_KEY = '9@*px_!v@z#i49%91y4dzl_95qkpxp#ujgxi_un3_6l#m2r3o2'
 
 
 # Database
