@@ -75,7 +75,6 @@ WSGI_APPLICATION = 'MyPortfolio.wsgi.application'
 # SECURITY WARNING: keep the secret key used in production secret!
 
 SECRET_KEY = '9@*px_!v@z#i49%91y4dzl_95qkpxp#ujgxi_un3_6l#m2r3o2'
-# SECRET_KEY = '9@*px_!v@z#i49%91y4dzl_95qkpxp#ujgxi_un3_6l#m2r3o2'
 
 
 # Database
@@ -131,8 +130,13 @@ USE_TZ = True
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-STATIC_URL = '/static/'
+
+STATICFILES_DIR = [
+    os.path.join(BASE_DIR, 'MyPortfolio/static/')
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

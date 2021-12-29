@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+    {%  load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -56,7 +56,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Ridoy Roy</a>
+                <a class="navbar-brand" href="{% url 'home' %}">Ridoy Roy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,13 +64,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Twitter</a>
+                            <a class="nav-link " aria-current="page" href="https://twitter.com/hr_rohid">Twitter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link" href="{% static 'DjangoSheet.pdf' %}">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
                         </li>
 
                     </ul>
@@ -92,8 +92,8 @@
                     </p>
                 </div>
             </div>
-        </section>
-
+        </section> 
+ 
         <div class="album py-5 bg-light">
             <div class="container">
 
